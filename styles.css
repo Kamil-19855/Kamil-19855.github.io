@@ -1,0 +1,146 @@
+* {
+    font-family: 'UnifrakturMaguntia', serif;
+}
+
+.website {
+    position: relative;
+    background: white;
+}
+
+.website__header {
+    top: 0;
+}
+
+.website-header {
+    background-image: url("images/Gilneas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 24px 10px rgba(66, 68, 90, 1);
+    padding-bottom: 20px;
+    border: wheat 0.5rem solid;
+}
+
+.website-header__logo-link {
+    display: block;
+    padding: 3px;
+}
+
+.website-header__logo {
+    max-width: 100%;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: wheat;
+}
+
+.website__content {
+    padding: 20px;
+    max-width: 100%;
+    background-image: url("images/594600.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content__section hr {
+    color: wheat;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap: 2rem;
+    max-width: 1500px;
+    width: 90%;
+}
+
+.gallery__item {
+    width: 30%;
+    min-width: 360px;
+    max-width: 445px;
+    aspect-ratio: 1/1;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    position: relative;
+    isolation: isolate;
+}
+
+.gallery__img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    aspect-ratio: 1/1;
+}
+
+.gallery__img-container::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("images/frame.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.gallery__img-container::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 80%;
+    -webkit-box-shadow: inset 0px 0px 42px 6px rgba(9, 9, 9, 1);
+    -moz-box-shadow: inset 0px 0px 42px 6px rgba(9, 9, 9, 1);
+    box-shadow: inset 0px 0px 42px 6px rgba(9, 9, 9, 1);
+    z-index: 1;
+
+}
+
+hr {
+    height: 100px;
+    border: none;
+    background-image: url("images/outward-arrows.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.gallery__img-container:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery__image {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+}
+
+.gallery__image--left {
+    object-position: center left;
+}
+
+.gallery__caption {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: wheat;
+
+}
+
+.website__footer {
+    height: 2.5rem;
+    font-size: 2rem;
+}
