@@ -20,7 +20,7 @@
     flex-direction: column;
     box-shadow: 0px 10px 24px 10px rgba(66, 68, 90, 1);
     padding-bottom: 20px;
-    border: wheat 0.5rem solid;
+    border: silver 0.5rem solid;
 }
 
 .website-header__logo-link {
@@ -32,14 +32,39 @@
     max-width: 100%;
 }
 
-.content h2 {
+.website-header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 4rem;
+    list-style-type: none;
+    gap: 3rem;
+    color: silver;
+}
+
+.website-header__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.website-header__nav--link:hover {
+    cursor: pointer;
+    list-style: none;
+    color: goldenrod
+}
+
+.content h1 {
     text-align: center;
     font-size: 4rem;
-    color: wheat;
+    color: silver;
 }
 
 .website__content {
-    padding: 20px;
     max-width: 100%;
     background-image: url("images/594600.jpg");
     background-repeat: no-repeat;
@@ -47,7 +72,7 @@
 }
 
 .content__section hr {
-    color: wheat;
+    color: silver
 }
 
 .gallery {
@@ -112,6 +137,7 @@ hr {
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
+
 }
 
 .gallery__img-container:hover {
@@ -136,7 +162,7 @@ hr {
     margin: 1rem;
     text-align: center;
     font-size: 2rem;
-    color: wheat;
+    color: silver;
 
 }
 
