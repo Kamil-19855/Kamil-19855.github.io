@@ -133,9 +133,9 @@
 }
 
 hr {
-    height: 100px;
+    height: 110px;
     border: none;
-    background-image: url("images/outward-arrows.svg");
+    background-image: url("images/chain3.png");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
