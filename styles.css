@@ -1,5 +1,6 @@
 * {
     font-family: 'UnifrakturMaguntia', serif;
+    cursor: url('images/cursor-1.png'), auto;
 }
 
 .website {
@@ -55,7 +56,8 @@
 .website-header__nav--link:hover {
     cursor: pointer;
     list-style: none;
-    color: goldenrod
+    color: goldenrod;
+    cursor: url('images/cursor-2.png'), auto;
 }
 
 .content h1 {
@@ -143,7 +145,6 @@ hr {
 .gallery__img-container:hover {
     transform: scale(1.1);
     transition: transform 1s ease-in-out;
-    cursor: pointer;
 }
 
 .gallery__image {
@@ -164,6 +165,12 @@ hr {
     font-size: 2rem;
     color: silver;
 
+}
+
+.gallery__caption--link:hover {
+    text-decoration: none;
+    color: goldenrod;
+    cursor: url('images/cursor-2.png'), auto;
 }
 
 .website__footer {
