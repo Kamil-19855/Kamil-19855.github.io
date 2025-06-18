@@ -1,6 +1,21 @@
-* {
-    font-family: 'UnifrakturMaguntia', serif;
+html {
     cursor: url('images/cursor-1.png'), auto;
+}
+
+body {
+
+    font-family: 'New Rocker', serif;
+    color: silver;
+}
+
+a:hover,
+button:hover {
+    cursor: url('images/cursor-2.png'), auto;
+    color: goldenrod;
+}
+
+h2 {
+    font-size: 4rem;
 }
 
 .website {
@@ -21,7 +36,7 @@
     flex-direction: column;
     box-shadow: 0px 10px 24px 10px rgba(66, 68, 90, 1);
     padding-bottom: 20px;
-    border: silver 0.5rem solid;
+    border: silver .5rem solid;
 }
 
 .website-header__logo-link {
@@ -31,39 +46,45 @@
 
 .website-header__logo {
     max-width: 100%;
-}
-
-.website-header__nav {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 4rem;
-    list-style-type: none;
-    gap: 3rem;
-    color: silver;
+    object-fit: contain;
 }
 
 .website-header__nav-list {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    font-size: clamp(2rem, 1rem + 4vw, 4rem);
+    list-style-type: none;
+    gap: .25rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.website-header__nav-link {
+    padding: 0.5rem;
+}
+
+.website-header__nav-list li {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 30%;
+    min-width: max-content;
     
 }
 
-.website-header__nav--link:hover {
-    cursor: pointer;
-    list-style: none;
+.website-header__nav-link--active {
     color: goldenrod;
-    cursor: url('images/cursor-2.png'), auto;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(11, 116, 204, 1);
+
 }
 
 .content h1 {
     text-align: center;
-    font-size: 4rem;
-    color: silver;
+    font-size: clamp(2rem, 1rem + 4vw, 4rem);
 }
 
 .website__content {
@@ -71,10 +92,6 @@
     background-image: url("images/594600.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.content__section hr {
-    color: silver
 }
 
 .gallery {
@@ -90,7 +107,7 @@
 
 .gallery__item {
     width: 30%;
-    min-width: 360px;
+    min-width: 320px;
     max-width: 445px;
     aspect-ratio: 1/1;
     margin: 1rem 0 0 0;
@@ -133,18 +150,16 @@
 }
 
 hr {
-    height: 110px;
+    height: 50px;
     border: none;
     background-image: url("images/chain3.png");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-
 }
 
-.gallery__img-container:hover {
-    transform: scale(1.1);
-    transition: transform 1s ease-in-out;
+hr:last-of-type {
+    margin-block: 2rem 0;
 }
 
 .gallery__image {
@@ -160,20 +175,120 @@ hr {
 }
 
 .gallery__caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     margin: 1rem;
     text-align: center;
     font-size: 2rem;
-    color: silver;
+    width: auto;
 
 }
 
-.gallery__caption--link:hover {
-    text-decoration: none;
-    color: goldenrod;
-    cursor: url('images/cursor-2.png'), auto;
+.gallery__caption-link p {
+    margin: .25rem .5rem;
 }
 
 .website__footer {
-    height: 2.5rem;
+    height: 3rem;
     font-size: 2rem;
+    background-image: url("images/brick-wall-footer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.character__section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.character__image {
+    width: 25%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.character__description {
+    margin: 0 5rem 0 5rem;
+    font-size: 1.5rem;
+}
+
+.character__description h2 {
+    margin-bottom: 1rem;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.stats__item {
+    flex-basis: calc(50% - .5rem);
+}
+
+.stats__item--label {
+    text-align: right;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.stats__item--value {
+    margin-top: 7px;
+    font-size: 1.25rem;
+}
+
+.button__sticky {
+    position: sticky;
+    width: max-content;
+    margin-inline: auto 0;
+    bottom: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    z-index: 4;
+}
+
+
+.arrow {
+    font-size: 2rem;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button__back-to-top:hover .arrow {
+    transform: translateY(-10px);    
+}
+
+.button__back-to-top {
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.gallery__sidescroll {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+    
+}
+
+.gallery__sidescroll-wrapper img {
+    object-fit: cover;
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+}
+
+.swiper-slide {
+    width: 445px;
 }
