@@ -292,3 +292,13 @@ hr:last-of-type {
 .swiper-slide {
     width: 445px;
 }
+
+.content__section {
+    margin: 0 5rem 0 5rem;
+    font-size: 1.5rem;
+}
+
+.content__section h3 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}

@@ -8,10 +8,10 @@
 
 <body class="website">
     <?php include 'header.php'; ?>
-    <main class="website__content content">
-        <?php include 'nav.php'; ?>
+    <?php include 'nav.php'; ?>
+    <h1>Adventures</h1>
 
-
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>
