@@ -8,6 +8,6 @@
 </main>
 <div>
 <footer class="website__footer">
-<p >&copy; 2023 My Web Page</p>
+<p >&copy; 2025 My Web Page</p>
 </footer>
 </div>  
