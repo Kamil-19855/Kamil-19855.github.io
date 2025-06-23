@@ -13,13 +13,22 @@
     <section class="content__section">
         <div class="ooc__content">
             <h3>OOC</h3>
-            <p>Type: Heavy Roleplay | Social | Casual Raiding & Mythic+ | Lore-Driven
-                Race Focus: Worgen & Humans (Gilnean); Open to others with IC justification (Night Elves, Void Elves,
-                etc.)
-                Location IC: The Moonheart Estate, deep in the haunted wilds near the Greymane Wall
-                Guild Hall (OOC Base): Halls of Shadowfang Keep or a phased Gilnean manor (RP-friendly location)
-                Discord: [Invite Link]
-                Theme: "A House Cursed, A Heart Unbroken."
+            <div>
+                <span class="ooc__content--span-bold">Type:</span> Heavy Roleplay | Social | Casual Raiding & Mythic+ | Lore-Driven
+            </div>
+            <div>
+                <span class="ooc__content--span-bold">Race Focus:</span> Worgen & Humans (Gilnean); Open to others with IC justification (Night Elves,
+                Void Elves, etc.)
+            </div>
+            <div>
+                <span class="ooc__content--span-bold">Location IC:</span> The Moonheart Estate, deep in the haunted wilds near the Greymane Wall
+            </div>
+            <div>
+                <span class="ooc__content--span-bold">Discord:</span> [Invite Link]
+            </div>
+            <div>
+                <span class="ooc__content--span-bold">Theme:</span> "A House Cursed, A Heart Unbroken."
+            </div>
             </p>
         </div>
         <div class="ooc__content">
