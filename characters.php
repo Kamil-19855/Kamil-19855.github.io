@@ -14,7 +14,7 @@
     <figure class="gallery__item">
         <a href="chance.php" class="gallery__item--link">
         <div class="gallery__img-container">
-            <img class="gallery__image gallery__image--left" src="images/Borker.png" alt="Image 1" width="445" height="445"> 
+            <img class="gallery__image gallery__image--left" src="images/Borker.jpg" alt="Image 1" width="445" height="445"> 
         </div>
         </a>
         <figcaption class="gallery__caption">
