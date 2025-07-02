@@ -99,7 +99,7 @@
         </div>
     </main>
     <?php include '../footer.php'; ?>
-<script src="../scripts.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 
 
