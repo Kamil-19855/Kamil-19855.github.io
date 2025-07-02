@@ -49,7 +49,7 @@
     </figure>
     <figure class="gallery__item">
         <div class="gallery__img-container">
-            <img class="gallery__image" src="images/Winstoon.png" alt="Image 1" width="445" height="445">
+            <img class="gallery__image" src="images/Winstoon.jpg" alt="Image 1" width="445" height="445">
         </div>
         <figcaption class="gallery__caption">
             <p>Winston</p>
